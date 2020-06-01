@@ -39,26 +39,28 @@ a:active {
 <body style="color:white;">
 
 
-<p>A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, read, update and delete data in a database. The most prevalent type of data management platform, the DBMS essentially serves as an interface between databases and end users or application programs, ensuring that data is consistently organized and remains easily accessible.
+<p>The Database Management System ( DBMS) is a system software for the creation and management of databases. The DBMS enables end-users to create, read, update, and delete data in a database. The most prevalent type of data management platform, DBMS, essentially serves as an interface between databases and end-users or application programs, ensuring that data is organized consistently and remains easily accessible.
 <H2><span style='font-size:25px;'>&#9830;</span> Functions of a DBMS</H2>
-The DBMS manages three important things: the data, the database engine that allows data to be accessed, locked and modified, and the database schema, which defines the database's logical structure. These three foundational elements help provide concurrency, security, data integrity and uniform data administration procedures. Typical database administration tasks supported by the DBMS include change management, performance monitoring and tuning, security, and backup and recovery. Many database management systems are also responsible for automated rollbacks and restarts as well as the logging and auditing of activity in databases.
+The DBMS manages three important things: the data, the database engine that allows the data to be accessed, locked and modified, and the database schema that defines the logical structure of the database. These three basic elements help to ensure consistency, security, data integrity, and consistency in data management procedures. Typical DBMS-supported database management tasks include change management, performance monitoring and tuning, security, and backup and recovery. Many database management systems are also responsible for automated rollbacks and restarts, as well as logging and auditing activities in databases.
+DBMS may be most useful for providing a centralized view of data that can be accessed by multiple users from multiple locations in a controlled manner. DBMS can limit what data the end-user sees, as well as how the end-user can view the data, providing a wide range of views of a single database schema. End users and software programs are exempt from the need to understand where the data is physically located or what form of storage media it resides as the DBMS manages all requests.
+DBMS can offer both logical and physical data independence. This means that it can protect users and applications from the need to know where the data is stored or to be concerned about changes in the physical structure of the data. As long as applications use the Application Programming Interface (API) for the database provided by the DBMS, developers do not have to modify programs simply because improvements have been made to the database.
 
-The DBMS is perhaps most useful for providing a centralized view of data that can be accessed by multiple users, from multiple locations, in a controlled manner. A DBMS can limit what data the end user sees, as well as how that end user can view the data, providing many views of a single database schema. End users and software programs are free from having to understand where the data is physically located or on what type of storage media it resides because the DBMS handles all requests.
-The DBMS can offer both logical and physical data independence.This means it can protect users and applications from needing to know where data is stored or having to be concerned about changes to the physical structure of data. As long as programs use the application programming interface (API) for the database that is provided by the DBMS, developers won't have to modify programs just because changes have been made to the database.
+In the relational database management system ( RDBMS), the most widely used type of DBMS, this API is SQL, the standard programming language for defining, protecting, and accessing data in the RDBMS.
 
-In a relational database management system (RDBMS), the most widely used type of DBMS, this API is SQL, a standard programming language for defining, protecting and accessing data in an RDBMS.      <p><img src="https://www.smartsheet.com/sites/default/files/ic-database-management-dbms-gatekeeper.svg" alt="DBMS" width="360" height="270"></p>
+Popular types of DBMS technology
+      <p><img src="https://www.smartsheet.com/sites/default/files/ic-database-management-dbms-gatekeeper.svg" alt="DBMS" width="360" height="270"></p>
 <h2><span style='font-size:25px;'>&#9830;</span> Popular database models and management systems include:</h2>
 
-<p>Relational database management system (RDBMS) -- adaptable to most use cases, but RDBMS Tier-1 products can be quite expensive.</p>
-<p>NoSQL DBMS -- well-suited for loosely defined data structures that may evolve over time.</p>
-<p>In-memory database management system (IMDBMS) -- provides faster response times and better performance.</p>
-<p>Columnar database management system (CDBMS) -- well-suited for data warehouses that have a large number of similar data items.</p>
-<p>Cloud-based database management system -- the cloud service provider is responsible for providing and maintaining the DBMS.</p>
+<p>Relational Database Management System (RDBMS)—adaptable to most use cases, but RDBMS Tier-1 products can be very costly.</p>
+<p>NoSQL DBMS — Suitable for loosely defined data structures that can develop over time.</p>
+<p>In-memory Database Management System (IMDBMS)—provides faster response times and improved performance.</p>
+<p>Columnar Database Management System (DBMS)—Suitable for data warehouses with a large number of similar data items.</p>
+<p>Cloud-based database management system — Cloud service provider is responsible for providing and maintaining DBMS.</p>
 
 <h2><span style='font-size:25px;'>&#9830;</span> Advantages of using a DBMS</h2>
 
-<p>Using a DBMS to store and manage data comes with advantages, but also processing overhead. One of the biggest advantages of using a DBMS is that it lets end users and application programmers access and use the same data while managing data integrity. Data is better protected and maintained when it can be shared using a DBMS instead of creating new iterations of the same data stored in new files for every new application. The DBMS provides a central store of data that can be accessed by multiple users in a controlled manner.</p>
-<p>Central storage and management of data within the DBMS provides:</p>
+<p>Using DBMS to store and manage data comes with benefits, but also overhead operation. One of the biggest advantages of using DBMS is that it allows end-users and application programmers to access and use the same data while managing data integrity. Data is better protected and maintained when it can be shared with DBMS instead of creating new iterations of the same data stored in new files for each new application. The DBMS provides a central data store that can be accessed by multiple users in a controlled manner.</p>
+<b>Central storage and management of data within the DBMS provides:</b>
 <p>Data abstraction and independence.</p>
 <p>Data security.</p>
 <p>A locking mechanism for concurrent access.</p>
@@ -69,12 +71,6 @@ In a relational database management system (RDBMS), the most widely used type of
 <p>Simple access using a standard API.</P>
 <p>Uniform administration procedures for data.</p>
 
-<p>Another advantage of a DBMS is that it can be used to impose a logical, structured organization on the data. A DBMS delivers economy of scale for processing large amounts of data because it is optimized for such operations.</p>
-
-<p>A DBMS can also provide many views of a single database schema. A view defines what data the user sees and how that user sees the data. The DBMS provides a level of abstraction between the conceptual schema that defines the logical structure of the database and the physical schema that describes the files, indexes and other physical mechanisms used by the database. When a DBMS is used, systems can be modified much more easily when business requirements change. New categories of data can be added to the database without disrupting the existing system and applications can be insulated from how data is structured and stored.</p>
-
-<p>However, a DBMS must perform additional work to provide these advantages, thereby bringing with it the overhead. A DBMS will use more memory and CPU than a simple file storage system, and different types of DBMSes will require different types and levels of system resources.</p>
-<
 <H2><span style='font-size:25px;'>&#9830;</span> Disadvantages of DBMS </H2>
 The disadvantages of the database approach are summarized as follows:
 
